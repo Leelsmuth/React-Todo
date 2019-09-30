@@ -1,6 +1,7 @@
 import React from "react";
 import TodoList from "./components/TodoComponents/TodoList";
 import TodoForm from "./components/TodoComponents/TodoForm";
+import "./App.css";
 
 const tasks = [
   {
@@ -57,14 +58,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div className="App">
+        <div className="header">
           <h2>To-Do List:</h2>
           <TodoForm addTask={this.addTask} clearFinished={this.clearFinished} />
         </div>
-        <div>
-          <TodoList toDoItems={this.state.tasks} toggleTask={this.toggleTask} />
-        </div>
+        <TodoList toDoItems={this.state.tasks} toggleTask={this.toggleTask} />
       </div>
     );
   }

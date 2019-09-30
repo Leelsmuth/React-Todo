@@ -60,14 +60,10 @@ class App extends React.Component {
       <div>
         <div>
           <h2>To-Do List:</h2>
-          <TodoForm addTask={this.addTask} />
+          <TodoForm addTask={this.addTask} clearFinished={this.clearFinished} />
         </div>
         <div>
-          <TodoList
-            toDoItems={this.state.tasks}
-            toggleTask={this.toggleTask}
-            clearFinished={this.clearFinished}
-          />
+          <TodoList toDoItems={this.state.tasks} toggleTask={this.toggleTask} />
         </div>
       </div>
     );

@@ -31,12 +31,3 @@ span {
   max-width: 665px;
   margin: 0 auto;
 }
-
-input::placeholder {
-  color: #e64944;
-  opacity: 1;
-}
-
-.clear-btn {
-  margin-top: 16px;
-}
